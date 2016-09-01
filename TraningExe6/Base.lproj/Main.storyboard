@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1909" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TraningExe6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-oj-kcP">
+                                <rect key="frame" x="20" y="87" width="95" height="133"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZCw-Bd-RJ9" appends="YES" id="gDl-gX-cHE"/>
+                                    <outletCollection property="gestureRecognizers" destination="kf0-Ez-Tba" appends="YES" id="Um0-y7-RIB"/>
+                                    <outletCollection property="gestureRecognizers" destination="vgW-oa-taW" appends="YES" id="w4Z-rK-A4x"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="mSE-95-i42">
+                                <rect key="frame" x="260" y="87" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="18I-42-eLO">
+                                <rect key="frame" x="20" y="254" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-xd-dO6">
+                                <rect key="frame" x="140" y="254" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-O0-VbW">
+                                <rect key="frame" x="260" y="254" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="6hj-ZM-pX8">
+                                <rect key="frame" x="20" y="448" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-Xw-lD3">
+                                <rect key="frame" x="140" y="448" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="SjM-YP-vKk">
+                                <rect key="frame" x="260" y="448" width="95" height="133"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="Rce-CB-0qj">
+                                <rect key="frame" x="140" y="87" width="95" height="133"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="card1" destination="MAE-oj-kcP" id="6CK-sC-pu8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZCw-Bd-RJ9">
+                    <connections>
+                        <action selector="tapcard1:" destination="BYZ-38-t0r" id="nRh-M5-Ujs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="kf0-Ez-Tba">
+                    <connections>
+                        <action selector="card1SwipeRight:" destination="BYZ-38-t0r" id="Qm2-rk-TxF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="vgW-oa-taW">
+                    <connections>
+                        <action selector="card1SwipeLeft:" destination="BYZ-38-t0r" id="3ex-FK-lrw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backCard" width="95" height="133"/>
+    </resources>
+</document>
