@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2yo-0Y-6UK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TraningExe6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="card1" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="MAE-oj-kcP">
+                                <rect key="frame" x="49" y="215" width="95" height="133"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZCw-Bd-RJ9" appends="YES" id="gDl-gX-cHE"/>
+                                    <outletCollection property="gestureRecognizers" destination="kf0-Ez-Tba" appends="YES" id="Um0-y7-RIB"/>
+                                    <outletCollection property="gestureRecognizers" destination="vgW-oa-taW" appends="YES" id="w4Z-rK-A4x"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="card2" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="Rce-CB-0qj" userLabel="Card2">
+                                <rect key="frame" x="212" y="215" width="95" height="133"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f2x-mK-uJA" appends="YES" id="8e5-zC-btd"/>
+                                    <outletCollection property="gestureRecognizers" destination="qgt-tF-Nle" appends="YES" id="Yjc-xf-NMH"/>
+                                    <outletCollection property="gestureRecognizers" destination="9nl-9Z-MIM" appends="YES" id="Nhb-3L-w81"/>
+                                </connections>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="oud-wv-sXw">
+                                <rect key="frame" x="76" y="138" width="223" height="3"/>
+                                <animations/>
+                            </progressView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="card4" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="18I-42-eLO" userLabel="Card4">
+                                <rect key="frame" x="212" y="411" width="95" height="133"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RdS-kn-N1Z" appends="YES" id="dEp-iY-yXE"/>
+                                    <outletCollection property="gestureRecognizers" destination="9WN-t6-GYE" appends="YES" id="Hxx-Q3-sM1"/>
+                                    <outletCollection property="gestureRecognizers" destination="euG-Oa-O5p" appends="YES" id="BPY-uy-u20"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="card3" image="backCard" translatesAutoresizingMaskIntoConstraints="NO" id="mSE-95-i42" userLabel="Card3">
+                                <rect key="frame" x="49" y="411" width="95" height="133"/>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sgQ-fc-ffH" appends="YES" id="Xy7-gN-h4t"/>
+                                    <outletCollection property="gestureRecognizers" destination="S0V-Wa-Pne" appends="YES" id="c0z-cf-54b"/>
+                                    <outletCollection property="gestureRecognizers" destination="jC3-Ru-qae" appends="YES" id="3p1-yx-mQd"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="card1" destination="MAE-oj-kcP" id="6CK-sC-pu8"/>
+                        <outlet property="card2" destination="Rce-CB-0qj" id="pS0-qv-meW"/>
+                        <outlet property="card3" destination="mSE-95-i42" id="QwH-QF-Pyg"/>
+                        <outlet property="card4" destination="18I-42-eLO" id="o3Q-or-Tmj"/>
+                        <outlet property="progressGame" destination="oud-wv-sXw" id="W0W-Dz-EaY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZCw-Bd-RJ9">
+                    <connections>
+                        <action selector="tapcard1:" destination="BYZ-38-t0r" id="nRh-M5-Ujs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="kf0-Ez-Tba">
+                    <connections>
+                        <action selector="card1SwipeRight:" destination="BYZ-38-t0r" id="Qm2-rk-TxF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="vgW-oa-taW">
+                    <connections>
+                        <action selector="card1SwipeLeft:" destination="BYZ-38-t0r" id="3ex-FK-lrw"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="f2x-mK-uJA">
+                    <connections>
+                        <action selector="tapcard2:" destination="BYZ-38-t0r" id="H9G-8z-4an"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="qgt-tF-Nle">
+                    <connections>
+                        <action selector="card2SwipeRight:" destination="BYZ-38-t0r" id="cvH-Oj-Mgh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="9nl-9Z-MIM">
+                    <connections>
+                        <action selector="card2SwipeLeft:" destination="BYZ-38-t0r" id="szf-YU-Z6g"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="RdS-kn-N1Z">
+                    <connections>
+                        <action selector="tapcard4:" destination="BYZ-38-t0r" id="P07-tp-Se3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="9WN-t6-GYE">
+                    <connections>
+                        <action selector="card4SwipeRight:" destination="BYZ-38-t0r" id="CvJ-g5-nv8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="euG-Oa-O5p">
+                    <connections>
+                        <action selector="card4SwipeLeft:" destination="BYZ-38-t0r" id="YId-SV-jBV"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="sgQ-fc-ffH">
+                    <connections>
+                        <action selector="tapcard3:" destination="BYZ-38-t0r" id="6uY-GE-90o"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="S0V-Wa-Pne">
+                    <connections>
+                        <action selector="card3SwipeRight:" destination="BYZ-38-t0r" id="JGt-5y-qLU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="jC3-Ru-qae">
+                    <connections>
+                        <action selector="card3SwipeLeft:" destination="BYZ-38-t0r" id="yDB-Tx-loe"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1818.5" y="214.5"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="Qww-vS-dbz">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NX6-MB-PLB" customClass="StartViewController" customModule="TraningExe6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ek0-Pr-UIF"/>
+                        <viewControllerLayoutGuide type="bottom" id="kF9-GF-I1G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Iz-bn-bkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m28-pm-r3b">
+                                <rect key="frame" x="130" y="189" width="114" height="30"/>
+                                <animations/>
+                                <state key="normal" title="New Game "/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="u8i-eL-LQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-6c-Cnx">
+                                <rect key="frame" x="130" y="273" width="114" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Setting"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42w-Ze-7eP">
+                                <rect key="frame" x="130" y="361" width="114" height="30"/>
+                                <animations/>
+                                <state key="normal" title="About "/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aqz-zQ-wYk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAM-Pq-7Kq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1371.5" y="214.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2dN-fL-EW6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2yo-0Y-6UK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="abe-rw-GHn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NX6-MB-PLB" kind="relationship" relationship="rootViewController" id="aWR-Nx-iHH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2P-bB-ix6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.5" y="214.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backCard" width="95" height="133"/>
+    </resources>
+</document>
